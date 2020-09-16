@@ -17,6 +17,7 @@ jobs:
         wget -q `cat $wiki/$drive | xargs` --directory-prefix=download
     - name: Upload your file
       run: |
+        ls -al
         git add .
         git commmit -m "add file"
         git push origin HEAD:refs/for/master
