@@ -20,6 +20,6 @@ jobs:
       run: |
         ls -al
         git add .
-        git commmit -m "add file"
+        git commit -m "add file"
         git push origin HEAD:refs/for/master
 
